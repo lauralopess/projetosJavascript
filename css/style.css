@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#filme {
+    width: 100%;                /* 100% da largura da pagina */
+    display: flex;              /* Alinhamento das divs */
+    justify-content: center;    /* Centralização das divs child */
+    
+    /* Envolve todo o conteúdo no campo de visão do usuário, retirando a barra de rolagem da horizontal, e quebrando o conteúdo */
+    flex-wrap: wrap;  
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 31%, rgba(253,29,29,1) 74%, rgba(159,70,168,1) 100%);     
+}
+
+#filme div {
+    width: 25%;                                               /* Largura de cada div child */
+    margin: 20px;                                             /* Espaçamento externo de uma div para a outra */
+    
+    box-shadow: 0px 1.5px 5px rgb(0, 0, 0);      /* Sombra de caixa: cordenada X, cordenada Y, esfumação, cor */ 
+    border-bottom-left-radius: 5px;                           /* Arredondamento da borda inferior esquerda */
+    border-bottom-right-radius: 5px;                          /* Arredondamento da borda inferior direita */
+    border-top-left-radius: 5px;     
+    border-top-right-radius: 5px;
+    padding: 10px; 
+    margin-bottom: 150px;
+
+}
+
+#filme div img {
+    width: 100%;                         /* Largura da imagem em sua div */
+    border-top-left-radius: 10px;       /* Arredondamento da borda superior esquerda */
+    border-top-right-radius: 10px;      /* Arredondamento da borda superior direita */
+    box-shadow: 0rgba(0, 0, 0, 0.459);
+   /* margin-top: -120px; */
+}
+
+#filme div:hover {
+    transition: ease 1.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 100vw rgba(60, 2, 114, 0.61);
+    border-radius: 5px;
+}
